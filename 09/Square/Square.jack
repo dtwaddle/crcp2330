@@ -37,7 +37,9 @@ class Square {
     method void draw() {
         do Screen.setColor(true);
         do Screen.drawRectangle(x, y, x + size, y + size);
-        do Screen.drawCircle(100, 100, 100);
+        do Screen.drawCircle(256, 128, 100);
+        do Screen.drawCircle(128, 128, 75);
+        do Screen.drawCircle(384, 128, 75);
         return;
     }
 
