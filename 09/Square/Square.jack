@@ -40,6 +40,11 @@ class Square {
         do Screen.drawCircle(256, 128, 100);
         do Screen.drawCircle(128, 128, 75);
         do Screen.drawCircle(384, 128, 75);
+        do Screen.setColor(false);
+        do Screen.drawCircle(216, 88, 10); //left eye
+        do Screen.drawCircle(296, 88, 10); //right eye
+        do Screen.drawCircle(256, 128, 15); //nose
+        do Screen.drawRectangle(226, 158, 276, 168); //mouth
         return;
     }
 
