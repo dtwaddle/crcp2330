@@ -53,12 +53,6 @@ class SquareGame {
             if (key = 81) {
                 let exit = true;
             }
-            if (key = 90) {
-                do square.decSize();
-            }
-            if (key = 88) {
-                do square.incSize();
-            }
             if (key = 131) {
                 let direction = 1;
             }

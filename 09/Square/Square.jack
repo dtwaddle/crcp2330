@@ -37,14 +37,22 @@ class Square {
     method void draw() {
         do Screen.setColor(true);
         do Screen.drawRectangle(x, y, x + size, y + size);
-        do Screen.drawCircle(256, 128, 100);
-        do Screen.drawCircle(128, 128, 75);
-        do Screen.drawCircle(384, 128, 75);
-        do Screen.setColor(false);
+        do Screen.drawCircle(256, 128, 100); //middle face
+        do Screen.drawCircle(128, 128, 75); //left face
+        do Screen.drawCircle(384, 128, 75); //right face
+        do Screen.setColor(false); //set colors to white for face decoration
         do Screen.drawCircle(216, 88, 10); //left eye
         do Screen.drawCircle(296, 88, 10); //right eye
         do Screen.drawCircle(256, 128, 15); //nose
         do Screen.drawRectangle(226, 158, 276, 168); //mouth
+        do Screen.drawCircle(128, 128, 10); //left face nose
+        do Screen.drawRectangle(108, 108, 138, 118); //left face mouth 
+        do Screen.drawCircle(384, 128, 10); //right face nose
+        do Screen.drawCircle(98, 98, 7); //left face left eye
+        do Screen.drawCircle(138, 98, 7); //left face right eye
+        
+
+
         return;
     }
 
@@ -55,25 +63,28 @@ class Square {
         return;
     }
 
-    /** Increments the size by 2 pixels. */
-    method void incSize() {
-        if (((y + size) < 254) & ((x + size) < 510)) {
-            do erase();
-            let size = size + 2;
-            do draw();
-        }
-        return;
-    }
+    /** Increments the size by 2 pixels. 
+    *method void incSize() {
+    *    if (((y + size) < 254) & ((x + size) < 510)) {
+    *        do erase();
+    *        let size = size + 2;
+    *        do draw();
+    *   }
+    *   return;
+    *}
+    */
 
-    /** Decrements the size by 2 pixels. */
-    method void decSize() {
-        if (size > 2) {
-            do erase();
-            let size = size - 2;
-            do draw();
-        }
-        return;
-	}
+    /** Decrements the size by 2 pixels. 
+    *method void decSize() {
+    *    if (size > 2) {
+    *        do erase();
+    *        let size = size - 2;
+    *        do draw();
+    *    }
+    *    return;
+	*}
+    */
+
 
     /** Moves up by 2 pixels. */
     method void moveUp() {
