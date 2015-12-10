@@ -1,4 +1,4 @@
-class code
+class Code
 
 	DEST = {
 		nil => '' ,
@@ -19,7 +19,8 @@ class code
         'JLT' => '100',
         'JNE' => '101',
         'JLE' => '110',
-        'JMP' => '111'}
+        'JMP' => '111',
+    }
 
   COMP = { 
   		'0'   => '0101010',
@@ -49,7 +50,7 @@ class code
         'D&A' => '0000000',
         'D&M' => '1000000',
         'D|A' => '0010101',
-        'D|M' => '1010101'
+        'D|M' => '1010101',
 	}
 
 	def dest(mnemonic)

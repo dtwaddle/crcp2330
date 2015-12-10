@@ -1,3 +1,5 @@
+require_relative 'code'
+
 class Parser
 	
 	def initialize(assembly_instructions)
@@ -27,6 +29,10 @@ class Parser
 
 	def assemble_c_command(instruction)
 		command = "111"
+		code = Code.new
+		dest_bits = code.dest('M')
+		command << dest_bits
+
 	end
 
 	def command_type(instruction)
