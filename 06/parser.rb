@@ -30,9 +30,8 @@ class Parser
 	def assemble_c_command(instruction)
 		command = "111"
 		code = Code.new
-		dest_bits = code.dest('M')
-		command << dest_bits
-
+		dest_bits = code.dest(instruction)
+		command 
 	end
 
 	def command_type(instruction)
@@ -42,5 +41,4 @@ class Parser
 			:c_command
 		end
 	end
-
 end
